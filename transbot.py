@@ -5,9 +5,7 @@ bot = telebot.TeleBot('6263282365:AAHyuz23Pmnt1cCzyXYoDnvugp_2d41tczI')
 # Функция, обрабатывающая команду /start
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
-    bot.send_message(m.chat.id, 'Русско-черкесский бот-переводчик. v0.1(beta)\n'
-                                'Обратная связь и претензии: kyabishev72@gmail.ru\n'
-                                'Наберите слово на русском языке...')
+    bot.send_message(m.chat.id, 'Русско-черкесский переводчик.\nНаберите слово на русском языке...')
 # Получение сообщений от юзера
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
