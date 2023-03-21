@@ -1,7 +1,7 @@
 import telebot
 import scrap
 # Создаем экземпляр бота
-bot = telebot.TeleBot('6263282365:AAHyuz23Pmnt1cCzyXYoDnvugp_2d41tczI')
+bot = telebot.TeleBot('')
 # Функция, обрабатывающая команду /start
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
