@@ -5,7 +5,7 @@ bot = telebot.TeleBot('6263282365:AAHyuz23Pmnt1cCzyXYoDnvugp_2d41tczI')
 # Функция, обрабатывающая команду /start
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
-    bot.send_message(m.chat.id, 'Русско-черкесский бот-переводчик. ver 0.1(beta).\n'
+    bot.send_message(m.chat.id, 'Русско-черкесский бот-переводчик. ver 0.1(beta).'
                                 'Источник словарной базы: academic.ru\n\n'
                                 'Здравствуйте! Я всего лишь языковая модель Жамбот '
                                 'и могу допускать ошибки в переводах, но я быстро учусь.\n'
